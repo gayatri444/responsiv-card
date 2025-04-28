@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+    
+     
+
+.product-card{
+width: 290px;
+height: 370px;
+border: 1px solid black;
+border-radius: 10px;
+margin: 10px;
+padding: 10px;
+position: relative;
+display: inline-block;
+}
+.product-container{
+    display: flex;
+  
+}
+
+
+
+
+
+.food-card{
+    height: 120px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px 2px black;
+    border-radius: 5px;
+    position: relative;
+
+
+}
+.food-img{
+    height:100px;
+    width: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
+
+}
+.food-heading{
+margin: 0;
+text-align: center;
+
+}
+.price-text{
+    font-size: 20px;
+text-align: left;
+}
+.price-amount{
+    font-weight: bold;
+    font-size: 24px;
+}
+.food-type-icon{
+    height:30px;
+    position:absolute ;
+    top: 9px;
+    left:270px;
+}
+.btn-order{
+    background-color: rgb(74, 18, 216);
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px;
+border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    right: 110px;
+    bottom: 1px;
+    color: #fbf2f2;
+}
+
+.food-description{
+    height: 300px;
+   
+
+}
+.food-container{
+    display: block;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+.navbar{
+  
+    background-color: rgb(108, 100, 100);
+    position: sticky;
+    top: 0;
+    align-items: center;
+    z-index: 1000;
+    display: flex;
+    padding:5px 20px ;
+    color: #f2e9e9;
+}
+
+.navbar-logo{
+height: 60px;
+}
+.navbar-brand{
+    font-style: italic;
+    margin-left: 20px;
+}
+.nav-menu-container{
+margin-left: 300px;
+}
+
+
+
+.nav-menu{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+   
+}
+
+.nav-menu:hover{
+    transition: 0.3s;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 4px double white;
+    padding-bottom: 2px;
+}
+
+.navbar-hamburger{
+    margin-left: auto;
+    height: 40px;
+display: none;
+}
+
+
+
+
+/* mobile device */
+@media (min-width:700px){
+   
+   .food-card{
+    width: 100%;
+   }
+   .food-type-icon{
+    height: 20px;
+   }
+   .nav-menu-container{
+  display: flex;
+   }
+   .navbar-hamburger{
+    display: block;
+   }
+}
+/* tablet device */
+@media (min-width:701px )and(max-width:992px){
+.food-card{
+    width: 300px;
+}
+.nav-menu-container{
+    margin-left: auto;
+}
+}
+/* laptop device */
+@media (min-width:993px )and(max-width:1200px){
+    
+
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+<img src="./image/food.png" class="navbar-logo" alt="logo"/>
+
+<h1 class="navbar-brand"> Fantasty😋</h1>
+
+<div class="nav-menu-container">
+<a href=""class="nav-menu">About</a>
+<a href=""class="nav-menu">Menu</a>
+<a href=""class="nav-menu">Contact</a>
+<a href=""class="nav-menu">Login</a>
+</div>
+
+<img src="./image/list.png" class="navbar-hamburger" alt="menu" />
+</div>
+
+
+
+
+
+
+<div class="food-container"></div>
+        <div class="product-card">
+<img src="./image/cupcake.png" class="food-img "alt="cupcake"><h1 class="food-heading">cupcake</h1>
+
+<p class="price-text"></p> <del>    ₹20</del><span class="price-amount">   ₹10/-</span></p>
+
+<p class="food-description">A cupcake is a small, individual-sized cake, typically baked in a paper or foil liner and often decorated with frosting or other toppings.</p>
+     <img src="./image/veg-icon.png" alt="non veg" class="food-type-icon"/>
+    <button class="btn-order">order now</button>
+    </div>
+
+
+
+         <div class="product-card">
+                <img src="./image/pasta.png"class="food-img "alt="cupcake"> <h1 class="food-heading">pasta</h1>
+                <p class="price-text"><del>₹100</del> <span class="price-amount">  ₹70/</span></p>
+                <p class="food-description">Pasta is a type of food, typically Italian, made from unleavened dough of wheat flour, often mixed with water or eggs, and formed into various shapes</p>
+                <img src="./image/veg-icon.png" alt="non veg" class="food-type-icon"/>
+                <button class="btn-order">order now</button>
+            </div>
+            
+        <div class=" product-card">
+        <img src="./image/pizza (1).png"class="food-img "alt="cupcake"> <h1 class="food-heading">pizza</h1>
+        <p class="price-text"><del>₹180</del> <span class="price-amount">    ₹150/</span></p>
+        <p class="food-description">Pizza is a popular, versatile dish typically consisting of a flat, round base of leavened wheat-based dough topped with tomato sauce, cheese, and various other ingredients </p>
+        <img src="./image/veg-icon.png" alt="non veg" class="food-type-icon"/>
+        <button class="btn-order">order now</button>
+    </div>
+       
+
+
+
+    
+        <div class="product-card">
+         <img src="./image/sandwich.png"class="food-img "alt="cupcake"><h1 class="food-heading">sandwich</h1>
+         <p class="price-text"> <del>₹100</del> <span class="price-amount">    ₹70/</span></p>
+         <p class="food-description">A sandwich is a food item typically consisting of two or more slices of bread with a filling, such as meat, cheese, vegetables, or spreads, between them</p>
+         <img src="./image/veg-icon.png" alt="non veg" class="food-type-icon"/>
+         <button class="btn-order">order now</button>
+        </div>
+
+
+
+        <div class="product-card">
+             <img src="./image/samosa.png"class="food-img "alt="cupcake">  <h1 class="food-heading">samosa</h1>
+             <p class="price-text"> <del>₹20</del><span class="price-amount">   ₹15/</span></p>
+            <p class="food-description">Samosa, a crispy and spicy deep fried snack that has an crisp and flaky outer layer made of maida and rich filling of mashed potato, peas and spices</p>
+           <img src="./image/veg-icon.png" alt="non veg" class="food-type-icon"/>
+           <button class="btn-order">order now</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
